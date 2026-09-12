@@ -18,8 +18,7 @@ import {
   ClipboardList,
 } from 'lucide-react';
 import './AICopilotPanel.css';
-
-const API_BASE = 'http://127.0.0.1:8000';
+import { API_BASE } from '../config';
 
 const INITIAL_GREETING =
   'Upload a complaint document or paste text above. I will automatically extract the details and populate the form for you.';

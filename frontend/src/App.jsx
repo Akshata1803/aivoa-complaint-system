@@ -4,6 +4,7 @@ import { setActiveModule } from './store/slices/complaintSlice';
 import LogComplaintForm from './components/LogComplaintForm';
 import AICopilotPanel from './components/AICopilotPanel';
 import { ShieldCheck, Layers, Pill } from 'lucide-react';
+import { API_BASE } from './config';
 
 export function App() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ export function App() {
   const [backendHealth, setBackendHealth] = useState({ status: 'checking' });
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/health')
+    fetch(`${API_BASE}/health`)
       .then((res) => res.json())
       .then((data) => setBackendHealth(data))
       .catch(() => setBackendHealth({ status: 'offline' }));

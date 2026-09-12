@@ -86,10 +86,10 @@ aivoa-complaint-system/
 
 5. Run the FastAPI development server:
    ```bash
-   uvicorn app.main:app --reload --port 8000
+   uvicorn app.main:app --reload --port 8001
    ```
-   - Health Check: [http://localhost:8000/health](http://localhost:8000/health)
-   - Interactive Docs (Swagger): [http://localhost:8000/docs](http://localhost:8000/docs)
+   - Health Check: [http://localhost:8001/health](http://localhost:8001/health)
+   - Interactive Docs (Swagger): [http://localhost:8001/docs](http://localhost:8001/docs)
 
 ---
 
